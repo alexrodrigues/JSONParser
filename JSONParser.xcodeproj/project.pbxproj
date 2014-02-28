@@ -21,6 +21,8 @@
 		0476049418C0B2E20040F38E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0476047618C0B2E20040F38E /* UIKit.framework */; };
 		0476049C18C0B2E20040F38E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0476049A18C0B2E20040F38E /* InfoPlist.strings */; };
 		0476049E18C0B2E20040F38E /* JSONParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476049D18C0B2E20040F38E /* JSONParserTests.m */; };
+		047604A918C0B36D0040F38E /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 047604A818C0B36D0040F38E /* JSONParser.m */; };
+		047604AB18C0BAAF0040F38E /* LocalFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 047604AA18C0BAAF0040F38E /* LocalFile.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		0476049918C0B2E20040F38E /* JSONParserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSONParserTests-Info.plist"; sourceTree = "<group>"; };
 		0476049B18C0B2E20040F38E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0476049D18C0B2E20040F38E /* JSONParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONParserTests.m; sourceTree = "<group>"; };
+		047604A718C0B36D0040F38E /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		047604A818C0B36D0040F38E /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		047604AA18C0BAAF0040F38E /* LocalFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocalFile.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,9 @@
 				0476048418C0B2E20040F38E /* Main.storyboard */,
 				0476048718C0B2E20040F38E /* ViewController.h */,
 				0476048818C0B2E20040F38E /* ViewController.m */,
+				047604A718C0B36D0040F38E /* JSONParser.h */,
+				047604A818C0B36D0040F38E /* JSONParser.m */,
+				047604AA18C0BAAF0040F38E /* LocalFile.json */,
 				0476048A18C0B2E20040F38E /* Images.xcassets */,
 				0476047918C0B2E20040F38E /* Supporting Files */,
 			);
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0476048B18C0B2E20040F38E /* Images.xcassets in Resources */,
+				047604AB18C0BAAF0040F38E /* LocalFile.json in Resources */,
 				0476047D18C0B2E20040F38E /* InfoPlist.strings in Resources */,
 				0476048618C0B2E20040F38E /* Main.storyboard in Resources */,
 			);
@@ -251,6 +260,7 @@
 			files = (
 				0476048918C0B2E20040F38E /* ViewController.m in Sources */,
 				0476048318C0B2E20040F38E /* AppDelegate.m in Sources */,
+				047604A918C0B36D0040F38E /* JSONParser.m in Sources */,
 				0476047F18C0B2E20040F38E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

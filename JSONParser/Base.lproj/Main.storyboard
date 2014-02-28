@@ -1,18 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DKk-qb-6GM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5oE-AT-NPo"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-Mw-cUt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Created by Appledev.com.br" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amG-Be-7oU">
+                                        <rect key="frame" x="20" y="20" width="284" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" red="0.99382445720000001" green="1" blue="0.97015211800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3803921938" green="0.67058825489999996" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="amG-Be-7oU" secondAttribute="bottom" constant="1" id="2yj-oP-T4w"/>
+                                    <constraint firstItem="amG-Be-7oU" firstAttribute="leading" secondItem="8FC-Mw-cUt" secondAttribute="leading" constant="20" symbolic="YES" id="Ffa-MX-ibH"/>
+                                    <constraint firstItem="amG-Be-7oU" firstAttribute="top" secondItem="8FC-Mw-cUt" secondAttribute="top" constant="20" symbolic="YES" id="sDj-Er-noc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-hL-f0Q">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Alex Rodrigues" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-Ee-Cpa">
+                                        <rect key="frame" x="88" y="3" width="277" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" red="0.99382445720000001" green="1" blue="0.97015211800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3803921938" green="0.67058825489999996" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eEb-Ee-Cpa" firstAttribute="leading" secondItem="cCZ-hL-f0Q" secondAttribute="leading" constant="88" id="02B-Ks-bQi"/>
+                                    <constraint firstItem="eEb-Ee-Cpa" firstAttribute="top" secondItem="cCZ-hL-f0Q" secondAttribute="top" constant="3" id="Cy8-Ll-2Fg"/>
+                                    <constraint firstAttribute="trailing" secondItem="eEb-Ee-Cpa" secondAttribute="trailing" constant="-45" id="kpa-pX-qXb"/>
+                                    <constraint firstAttribute="bottom" secondItem="eEb-Ee-Cpa" secondAttribute="bottom" constant="4" id="qnP-9U-gUh"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="url json to parse" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-6X-Ucs">
+                                <rect key="frame" x="6" y="92" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pr-Am-k4I">
+                                <rect key="frame" x="204" y="101" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="vEv-fi-jpN"/>
+                                </constraints>
+                                <state key="normal" title="parse URL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseJSONURL:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MAb-ar-dbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMB-83-neN">
+                                <rect key="frame" x="-6" y="155" width="315" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OR just parse local file ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseNOWJSONFile:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7v8-8g-Z4h"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The result of JSON will appear here :)" translatesAutoresizingMaskIntoConstraints="NO" id="0fz-OR-bS9">
+                                <rect key="frame" x="0.0" y="209" width="320" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Pr-Am-k4I" firstAttribute="leading" secondItem="ETf-6X-Ucs" secondAttribute="trailing" constant="8" symbolic="YES" id="2NO-ue-wgA"/>
+                            <constraint firstAttribute="trailing" secondItem="8FC-Mw-cUt" secondAttribute="trailing" id="4pD-m7-1yW"/>
+                            <constraint firstItem="8Pr-Am-k4I" firstAttribute="top" secondItem="8FC-Mw-cUt" secondAttribute="bottom" constant="22" id="7O6-Od-zyC"/>
+                            <constraint firstItem="8FC-Mw-cUt" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="96h-ac-DQz"/>
+                            <constraint firstItem="DMB-83-neN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-6" id="AjS-4r-uZz"/>
+                            <constraint firstItem="0fz-OR-bS9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="J6V-Hq-cAX"/>
+                            <constraint firstItem="cCZ-hL-f0Q" firstAttribute="trailing" secondItem="0fz-OR-bS9" secondAttribute="trailing" id="Lgr-m0-8v1"/>
+                            <constraint firstAttribute="bottom" secondItem="cCZ-hL-f0Q" secondAttribute="bottom" id="OUz-uI-t3N"/>
+                            <constraint firstItem="8FC-Mw-cUt" firstAttribute="leading" secondItem="0fz-OR-bS9" secondAttribute="leading" id="Oh0-sK-9rg"/>
+                            <constraint firstItem="cCZ-hL-f0Q" firstAttribute="top" secondItem="0fz-OR-bS9" secondAttribute="bottom" id="Y0l-3N-OM6"/>
+                            <constraint firstItem="8Pr-Am-k4I" firstAttribute="trailing" secondItem="DMB-83-neN" secondAttribute="trailing" id="f2y-F2-pF0"/>
+                            <constraint firstItem="DMB-83-neN" firstAttribute="top" secondItem="8Pr-Am-k4I" secondAttribute="bottom" constant="24" id="krc-ZN-Bpn"/>
+                            <constraint firstItem="8FC-Mw-cUt" firstAttribute="trailing" secondItem="0fz-OR-bS9" secondAttribute="trailing" id="oRq-9d-oVj"/>
+                            <constraint firstItem="ETf-6X-Ucs" firstAttribute="top" secondItem="8FC-Mw-cUt" secondAttribute="bottom" constant="13" id="sCs-7o-Afc"/>
+                            <constraint firstItem="cCZ-hL-f0Q" firstAttribute="leading" secondItem="0fz-OR-bS9" secondAttribute="leading" id="sqp-ZG-c6p"/>
+                            <constraint firstItem="0fz-OR-bS9" firstAttribute="top" secondItem="DMB-83-neN" secondAttribute="bottom" constant="24" id="xPe-gb-Cgw"/>
+                            <constraint firstItem="ETf-6X-Ucs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="92" id="yHO-Na-0ya"/>
+                            <constraint firstItem="ETf-6X-Ucs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="6" id="ynA-db-YSt"/>
+                            <constraint firstAttribute="trailing" secondItem="8Pr-Am-k4I" secondAttribute="trailing" constant="11" id="zQQ-Gl-liw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtUrl" destination="ETf-6X-Ucs" id="7uG-C9-ThU"/>
+                        <outlet property="txtView" destination="0fz-OR-bS9" id="PHm-Ui-bp6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
